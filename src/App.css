@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Global styles */
+body {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Apply some styles to links */
+a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style the Navbar */
+nav {
+  background: #333;
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+/* Style the Hero Section */
+.hero-container {
+  background: url('your-hero-image.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-container h2 {
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the About Section */
+.about-container {
+  background: #f4f4f4;
+  padding: 2rem;
 }
+
+.about-container h2 {
+  font-size: 1.5rem;
+}
+
+/* Style the Services Section */
+.services-container {
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+.services-container h2 {
+  font-size: 1.5rem;
+}
+
+.services-container ul {
+  list-style: none;
+}
+
+.services-container li {
+  margin-bottom: 0.5rem;
+}
+
+/* Style the Contact Section */
+.contact-container {
+  background: #f4f4f4;
+  padding: 2rem;
+}
+
+.contact-container h2 {
+  font-size: 1.5rem;
+}
+
+/* Style the Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Make the site responsive using media queries if needed */
